@@ -6,6 +6,7 @@ public class Player implements IModel<Integer> {
     private int id = 0;
 
     public Player() {
+
     }
 
     @Override

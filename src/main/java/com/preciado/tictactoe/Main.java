@@ -9,8 +9,17 @@ import com.preciado.utilities.console.IconsoleApp;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main implements IconsoleApp {
     public static void main(String[] args) {
-        Main main = new Main();
-
+        /*
+        two players one 3x3 board
+        one = x(1)
+        two = 0(0)
+        p1
+        p2
+        p1
+        p2
+        p1
+        end
+        * */
     }
 
     @Override
