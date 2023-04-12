@@ -1,21 +1,35 @@
 package com.preciado.tictactoe.models;
 
-import com.preciado.utilities.console.mvvm.interfaces.IModel;
-
-public class Player implements IModel<Integer> {
-    private int id = 0;
-
-    public Player() {
-
-    }
+import com.preciado.game.interfaces.IStats;
+public class Player extends com.preciado.game.models.Player<Integer> {
 
     @Override
     public Integer getId() {
-        return id;
+        return null;
     }
 
     @Override
     public void setId(Integer id) {
-        this.id = id;
+
+    }
+
+    @Override
+    public String getUsername() {
+        return null;
+    }
+
+    @Override
+    public void setUsername(String username) {
+
+    }
+
+    @Override
+    public IStats getPlayerStats() {
+        return null;
+    }
+
+    @Override
+    public void setPlayerStats(IStats stats) {
+
     }
 }
