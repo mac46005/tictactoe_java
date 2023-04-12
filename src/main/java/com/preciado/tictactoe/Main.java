@@ -1,34 +1,20 @@
 package com.preciado.tictactoe;
 
-import com.preciado.game.models.Player;
-import com.preciado.utilities.console.IconsoleApp;
+import com.google.common.reflect.Reflection;
+import com.preciado.tictactoe.controllers.HomeController;
+import com.preciado.utilities.console.mvc.models.Router;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
-public class Main implements IconsoleApp {
-    Player[] players = new Player[2];
-
-    public Main() {
-
-    }
-
+public class Main{
     public static void main(String[] args) {
-        /*
-        two players one 3x3 board
-        one = x(1)
-        two = 0(0)
-        p1
-        p2
-        p1
-        p2
-        p1
-        end
-        * */
-    }
-    @Override
-    public void run(String[] args) {
-        while(true){
 
-        }
+        Router router = new Router();
+
+        router.registerRoute("home/index", new HomeController());
+
+        TicTacToe ticTacToe = (TicTacToe) new TicTacToe()
+                .addRouter(router);
+
+
+        ticTacToe.run(args);
     }
 }
