@@ -9,7 +9,7 @@ public class ViewResult extends ActionResult {
     }
 
     @Override
-    public void ExecuteResult(ControllerContext context) {
+    public void executeResult() {
         view.display();
     }
 }

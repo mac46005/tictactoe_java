@@ -1,5 +1,7 @@
 package com.preciado.utilities.console.mvc.models;
 
+import com.preciado.utilities.console.mvc.interfaces.IEventListener;
+
 import java.util.ArrayList;
 import java.util.EventObject;
 import java.util.List;
